@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import '../../public/css/animate.css';
-import '../../public/css/icomoon.css';
-import '../../public/css/bootstrap.css';
-import '../../public/css/magnific-popup.css';
-import '../../public/css/owl.carousel.min.css';
-import '../../public/css/owl.theme.default.min.css';
+import "../../public/css/animate.css";
+import "../../public/css/icomoon.css";
+import "../../public/css/bootstrap.css";
+import "../../public/css/magnific-popup.css";
+import "../../public/css/owl.carousel.min.css";
+import "../../public/css/owl.theme.default.min.css";
 import AppHeader from "@/pages/header";
 import AppFooter from "@/pages/footer";
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -24,8 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-
+      <body>
         {/* <div className="fh5co-loader"></div> */}
         <div id="page">
           <AppHeader />
@@ -33,7 +32,6 @@ export default function RootLayout({
           <AppFooter />
         </div>
       </body>
-
     </html>
   );
 }
