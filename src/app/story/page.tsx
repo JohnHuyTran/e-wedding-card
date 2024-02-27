@@ -37,7 +37,7 @@ const Story = () => {
                                 </div>
                             </li>
                             <li className="animate-box">
-                                <div className="timeline-badge" style={{ backgroundImage: "url(images/couple-3.jpg);" }}></div>
+                                <div className="timeline-badge" style={{ backgroundImage: "url(images/couple-3.jpg)" }}></div>
                                 <div className="timeline-panel">
                                     <div className="timeline-heading">
                                         <h3 className="timeline-title">In A Relationship</h3>
