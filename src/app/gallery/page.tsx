@@ -8,7 +8,7 @@ const Gallery = () => {
             <div className='container'>
                 <div className='row'>
                     <motion.div
-                        className='col-md-8 col-md-offset-2 text-center fh5co-heading animate-box'
+                        className=' text-center fh5co-heading animate-box'
                         initial='hide'
                         whileInView='show'
                         variants={AppVariantsY(100, 1)}

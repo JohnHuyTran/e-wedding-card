@@ -34,15 +34,15 @@ const AppHeader = () => {
             <nav className='fh5co-nav' role='navigation'>
                 <div className='container'>
                     <div className='row'>
-                        <div className='col-xs-2'>
+                        <div className='col-2'>
                             <div id='fh5co-logo'>
                                 <Link href='/'>
                                     Wedding<strong>.</strong>
                                 </Link>
                             </div>
                         </div>
-                        <div className='col-xs-10 text-right menu-1'>
-                            <ul>
+                        <div className='col-10 text-right menu-1'>
+                            <ul className='float-right'>
                                 <li className='active'>
                                     <a href='/'>Home</a>
                                 </li>

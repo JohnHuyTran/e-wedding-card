@@ -36,24 +36,11 @@ export function Map() {
     }, []);
     return (
         <>
-            <div className='col-md-6 map-render'>
-                <div
-                    className='map'
-                    ref={mapRef}
-                    style={{ height: "300px" }}
-                ></div>
-                <div className='address'>
-                    <span>
-                        Địa chỉ: Làng Hạ, Phùng Minh, Ngọc Lặc, Thanh Hóa
-                    </span>
-                </div>
-                <span>
-                    lat: <b>19.954866549373442</b>{" "}
-                </span>
-                <span>
-                    lng:<b>105.33067468198267</b>{" "}
-                </span>
-            </div>
+            <div
+                className='map'
+                ref={mapRef}
+                style={{ height: "400px", width: "400px" }}
+            ></div>
         </>
     );
 }

@@ -12,7 +12,7 @@ const Event = () => {
             <div className='container'>
                 <div className='row'>
                     <motion.div
-                        className='col-md-8 col-md-offset-2 text-center fh5co-heading animate-box'
+                        className='col-md-offset-2 text-center fh5co-heading animate-box'
                         initial='hide'
                         whileInView='show'
                         variants={AppVariantsY(-100, 1)}
@@ -21,12 +21,12 @@ const Event = () => {
                         <h2>Wedding Events</h2>
                     </motion.div>
                 </div>
-                <div className='row'>
+                <div className='row d-flex'>
                     <div className='display-t'>
                         <div className='display-tc'>
-                            <div className='col-md-10 col-md-offset-1'>
+                            <div className='col-10 col-md-offset-1 row'>
                                 <motion.div
-                                    className='col-md-6 col-sm-6 text-center'
+                                    className='col-lg-6 text-center'
                                     initial='hide'
                                     whileInView='show'
                                     variants={AppVariantsY(100, 1)}
@@ -51,7 +51,7 @@ const Event = () => {
                                     </div>
                                 </motion.div>
                                 <motion.div
-                                    className='col-md-6 col-sm-6 text-center'
+                                    className='col-lg-6 text-center'
                                     initial='hide'
                                     whileInView='show'
                                     variants={AppVariantsY(200, 1)}
