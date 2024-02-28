@@ -41,7 +41,7 @@ const AppHeader = () => {
                                 </Link>
                             </div>
                         </div>
-                        <div className='col-10 text-right menu-1'>
+                        <div className='col-10 d-flex justify-content-end menu-1'>
                             <ul className='float-right'>
                                 <li className='active'>
                                     <a href='/'>Home</a>
@@ -65,15 +65,12 @@ const AppHeader = () => {
                 style={{ backgroundImage: "url(images/img_bg_2.jpg)" }}
                 data-stellar-background-ratio='0.5'
             >
-                <div className='overlay'></div>
-                <div className='container'>
+                {/* <div className='overlay'></div> */}
+                <div className='container d-flex justify-content-center'>
                     <div className='row'>
-                        <div className='col-md-10 col-md-offset-2 text-center'>
+                        <div className=' text-center'>
                             <div className='display-t'>
-                                <div
-                                    className='display-tc animate-box'
-                                    data-animate-effect='fadeIn'
-                                >
+                                <div className='display-tc animate-box'>
                                     <h1>Vĩnh Hảo &amp; Mai Lan</h1>
                                     <h2>Đám cưới sẽ được tổ chức</h2>
                                     <div className='simply-countdown simply-countdown-one'>
