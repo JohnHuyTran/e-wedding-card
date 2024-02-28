@@ -4,50 +4,52 @@ import { AppVariantsX, AppVariantsY } from "../common/variant";
 
 const Story = () => {
     return (
-        <div id='fh5co-couple-story'>
-            <div className='container'>
-                <div className='row'>
+        <div id="fh5co-couple-story">
+            <div className="container">
+                <div className="row">
                     <motion.div
-                        className='text-center fh5co-heading animate-box'
-                        initial='hide'
-                        whileInView='show'
+                        className="text-center fh5co-heading animate-box"
+                        initial="hide"
+                        whileInView="show"
                         variants={AppVariantsY(100, 1)}
                     >
-                        <span>We Love Each Other</span>
-                        <h2>Our Story</h2>
-                        <p>
-                            Far far away, behind the word mountains, far from
-                            the countries Vokalia and Consonantia, there live
-                            the blind texts.
-                        </p>
+                        <span>Những khoảnh khắc yêu thương</span>
+                        <h2>Câu chuyện </h2>
+                        <p></p>
                     </motion.div>
                 </div>
-                <div className='row'>
-                    <div className='col-md-12 col-md-offset-0'>
-                        <ul className='timeline animate-box'>
+                <div className="row">
+                    <div className="col-md-12 col-md-offset-0">
+                        <ul className="timeline animate-box">
                             <motion.li
-                                className='animate-box'
-                                initial='hide'
-                                whileInView='show'
+                                className="animate-box"
+                                initial="hide"
+                                whileInView="show"
                                 variants={AppVariantsY(-100, 1)}
+                                animate={{ opacity: 0 }}
+                                transition={{
+                                    repeat: Infinity,
+                                    repeatType: "reverse",
+                                    duration: 2,
+                                }}
                             >
                                 <div
-                                    className='timeline-badge'
+                                    className="timeline-badge"
                                     style={{
                                         backgroundImage:
                                             "url(images/couple-1.jpg)",
                                     }}
                                 ></div>
-                                <div className='timeline-panel'>
-                                    <div className='timeline-heading'>
-                                        <h3 className='timeline-title'>
+                                <div className="timeline-panel">
+                                    <div className="timeline-heading">
+                                        <h3 className="timeline-title">
                                             First We Meet
                                         </h3>
-                                        <span className='date'>
+                                        <span className="date">
                                             December 25, 2015
                                         </span>
                                     </div>
-                                    <div className='timeline-body'>
+                                    <div className="timeline-body">
                                         <p>
                                             Far far away, behind the word
                                             mountains, far from the countries
@@ -61,28 +63,28 @@ const Story = () => {
                                 </div>
                             </motion.li>
                             <motion.li
-                                className='timeline-inverted animate-box'
-                                initial='hide'
-                                whileInView='show'
+                                className="timeline-inverted animate-box"
+                                initial="hide"
+                                whileInView="show"
                                 variants={AppVariantsY(100, 1)}
                             >
                                 <div
-                                    className='timeline-badge'
+                                    className="timeline-badge"
                                     style={{
                                         backgroundImage:
                                             "url(images/couple-2.jpg)",
                                     }}
                                 ></div>
-                                <div className='timeline-panel'>
-                                    <div className='timeline-heading'>
-                                        <h3 className='timeline-title'>
+                                <div className="timeline-panel">
+                                    <div className="timeline-heading">
+                                        <h3 className="timeline-title">
                                             First Date
                                         </h3>
-                                        <span className='date'>
+                                        <span className="date">
                                             December 28, 2015
                                         </span>
                                     </div>
-                                    <div className='timeline-body'>
+                                    <div className="timeline-body">
                                         <p>
                                             Far far away, behind the word
                                             mountains, far from the countries
@@ -96,28 +98,28 @@ const Story = () => {
                                 </div>
                             </motion.li>
                             <motion.li
-                                className='animate-box'
-                                initial='hide'
-                                whileInView='show'
+                                className="animate-box"
+                                initial="hide"
+                                whileInView="show"
                                 variants={AppVariantsX(100, 1)}
                             >
                                 <div
-                                    className='timeline-badge'
+                                    className="timeline-badge"
                                     style={{
                                         backgroundImage:
                                             "url(images/couple-3.jpg)",
                                     }}
                                 ></div>
-                                <div className='timeline-panel'>
-                                    <div className='timeline-heading'>
-                                        <h3 className='timeline-title'>
+                                <div className="timeline-panel">
+                                    <div className="timeline-heading">
+                                        <h3 className="timeline-title">
                                             In A Relationship
                                         </h3>
-                                        <span className='date'>
+                                        <span className="date">
                                             January 1, 2016
                                         </span>
                                     </div>
-                                    <div className='timeline-body'>
+                                    <div className="timeline-body">
                                         <p>
                                             Far far away, behind the word
                                             mountains, far from the countries

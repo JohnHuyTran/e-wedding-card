@@ -1,4 +1,6 @@
 "use client";
+import { AppVariantsY } from "@/app/common/variant";
+import { motion } from "framer-motion";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -23,7 +25,7 @@ const AppHeader = () => {
         }, 1000);
 
         return () => clearInterval(interval);
-    }, [currentDate]);
+    }, [currentDate, inputDate]);
 
     function formatTime(time: any) {
         return time < 10 ? `0${time}` : time;
@@ -31,26 +33,26 @@ const AppHeader = () => {
 
     return (
         <>
-            <nav className='fh5co-nav' role='navigation'>
-                <div className='container'>
-                    <div className='row'>
-                        <div className='col-2'>
-                            <div id='fh5co-logo'>
-                                <Link href='/'>
+            <nav className="fh5co-nav" role="navigation">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-2">
+                            <div id="fh5co-logo">
+                                <Link href="/">
                                     Wedding<strong>.</strong>
                                 </Link>
                             </div>
                         </div>
-                        <div className='col-10 d-flex justify-content-end menu-1'>
-                            <ul className='float-right'>
-                                <li className='active'>
-                                    <a href='/'>Home</a>
+                        <div className="col-10 d-flex justify-content-end menu-1">
+                            <ul className="float-right">
+                                <li className="active">
+                                    <a href="/">Home</a>
                                 </li>
                                 <li>
-                                    <Link href='story'>Story</Link>
+                                    <Link href="story">Story</Link>
                                 </li>
                                 <li>
-                                    <a href='contact.html'>Contact</a>
+                                    <a href="contact.html">Contact</a>
                                 </li>
                             </ul>
                         </div>
@@ -59,57 +61,66 @@ const AppHeader = () => {
             </nav>
 
             <header
-                id='fh5co-header'
-                className='fh5co-cover'
-                role='banner'
+                id="fh5co-header"
+                className="fh5co-cover"
+                role="banner"
                 style={{ backgroundImage: "url(images/img_bg_2.jpg)" }}
-                data-stellar-background-ratio='0.5'
+                data-stellar-background-ratio="0.5"
             >
                 {/* <div className='overlay'></div> */}
-                <div className='container d-flex justify-content-center'>
-                    <div className='row'>
-                        <div className=' text-center'>
-                            <div className='display-t'>
-                                <div className='display-tc animate-box'>
-                                    <h1>Vĩnh Hảo &amp; Mai Lan</h1>
-                                    <h2>Đám cưới sẽ được tổ chức</h2>
-                                    <div className='simply-countdown simply-countdown-one'>
-                                        <div className='simply-section simply-days-section'>
+                <div className="container d-flex justify-content-center">
+                    <div className="row">
+                        <div className=" text-center">
+                            <div className="display-t">
+                                <div className="display-tc animate-box">
+                                    <motion.div
+                                        initial="hide"
+                                        whileInView="show"
+                                        variants={AppVariantsY(-100, 1)}
+                                        whileHover={{ scale: 1.1 }}
+                                        whileTap={{ scale: 0.9 }}
+                                    >
+                                        <h1>Vĩnh Hảo &amp; Mai Lan</h1>
+                                        <h2>Đám cưới sẽ được tổ chức</h2>
+                                    </motion.div>
+
+                                    <div className="simply-countdown simply-countdown-one">
+                                        <div className="simply-section simply-days-section">
                                             <div>
-                                                <span className='simply-amount'>
+                                                <span className="simply-amount">
                                                     {days}
                                                 </span>
-                                                <span className='simply-word'>
+                                                <span className="simply-word">
                                                     ngày
                                                 </span>
                                             </div>
                                         </div>
-                                        <div className='simply-section simply-hours-section'>
+                                        <div className="simply-section simply-hours-section">
                                             <div>
-                                                <span className='simply-amount'>
+                                                <span className="simply-amount">
                                                     {hours}
                                                 </span>
-                                                <span className='simply-word'>
+                                                <span className="simply-word">
                                                     giờ
                                                 </span>
                                             </div>
                                         </div>
-                                        <div className='simply-section simply-minutes-section'>
+                                        <div className="simply-section simply-minutes-section">
                                             <div>
-                                                <span className='simply-amount'>
+                                                <span className="simply-amount">
                                                     {minutes}
                                                 </span>
-                                                <span className='simply-word'>
+                                                <span className="simply-word">
                                                     phút
                                                 </span>
                                             </div>
                                         </div>
-                                        <div className='simply-section simply-seconds-section'>
+                                        <div className="simply-section simply-seconds-section">
                                             <div>
-                                                <span className='simply-amount'>
+                                                <span className="simply-amount">
                                                     {seconds}
                                                 </span>
-                                                <span className='simply-word'>
+                                                <span className="simply-word">
                                                     giây
                                                 </span>
                                             </div>
@@ -120,8 +131,8 @@ const AppHeader = () => {
                                     </div> */}
                                     <p>
                                         <a
-                                            href='#'
-                                            className='btn btn-default btn-sm'
+                                            href="#"
+                                            className="btn btn-default btn-sm"
                                         >
                                             Lưu thời gian
                                         </a>

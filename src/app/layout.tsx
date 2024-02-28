@@ -23,10 +23,10 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang='en'>
+        <html lang="en">
             <body>
                 {/* <div className="fh5co-loader"></div> */}
-                <div id='page'>
+                <div id="page">
                     <AppHeader />
                     {children}
                     <AppFooter />

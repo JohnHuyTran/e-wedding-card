@@ -1,6 +1,6 @@
 import { Variants } from "framer-motion";
 
-export function AppVariantsX (x:any, duration:any):Variants{
+export function AppVariantsX(x: any, duration: any): Variants {
     return {
         hide: {
             opacity: 0,
@@ -16,7 +16,7 @@ export function AppVariantsX (x:any, duration:any):Variants{
     }
 }
 
-export function AppVariantsY(y:any,duration:any):Variants{
+export function AppVariantsY(y: any, duration: any): Variants {
     return {
         hide: {
             opacity: 0,
@@ -31,3 +31,4 @@ export function AppVariantsY(y:any,duration:any):Variants{
         },
     }
 }
+

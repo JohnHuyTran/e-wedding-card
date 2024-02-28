@@ -9,10 +9,12 @@ export function Map() {
         const initMap = async () => {
             const loader = new Loader({
                 apiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_KEY as string,
-                version: " weekly",
+                version: "weekly",
+                id: "__googleMapsScriptId",
             });
 
             const { Map } = await loader.importLibrary("maps");
+
             const { Marker } = (await loader.importLibrary(
                 "marker"
             )) as google.maps.MarkerLibrary;
@@ -36,11 +38,7 @@ export function Map() {
     }, []);
     return (
         <>
-            <div
-                className='map'
-                ref={mapRef}
-                style={{ height: "400px", width: "400px" }}
-            ></div>
+            <div className="map" ref={mapRef} style={{ height: "400px" }}></div>
         </>
     );
 }

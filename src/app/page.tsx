@@ -17,7 +17,7 @@ export default function Home() {
 
             <Gallery />
 
-            <div
+            {/* <div
                 id='fh5co-counter'
                 className='fh5co-bg fh5co-counter'
                 style={{ backgroundImage: "url(images/img_bg_5.jpg) " }}
@@ -110,7 +110,7 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
             <AppInfo />
         </main>
     );
