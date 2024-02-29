@@ -19,7 +19,6 @@
     "react-bootstrap": "^2.10.1",
     "react-dom": "^18",
     "react-owl-carousel": "^2.3.3",
-    "svg-url-loader": "^8.0.0",
     "use-places-autocomplete": "^4.0.1",
     "webpack": "^5.90.3"
   },
