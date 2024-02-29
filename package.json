@@ -19,6 +19,7 @@
     "react-bootstrap": "^2.10.1",
     "react-dom": "^18",
     "react-owl-carousel": "^2.3.3",
+    "svg-url-loader": "^8.0.0",
     "use-places-autocomplete": "^4.0.1",
     "webpack": "^5.90.3"
   },
@@ -30,6 +31,7 @@
     "eslint": "^8",
     "eslint-config-next": "14.1.0",
     "expose-loader": "^5.0.0",
+    "file-loader": "^6.2.0",
     "typescript": "^5"
   }
 }
